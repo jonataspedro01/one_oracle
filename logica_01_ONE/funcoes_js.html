@@ -1,24 +1,24 @@
-
+<meta charset="UTF-8">
 
 <script>
 
     function pulaLinha() {
 
-        document.write("<br><br><br>");
+        document.write("<br><br>");
+        document.write("<hr>");
+        document.write("<br>");
     }
-
+   
+    function mostra(frase) {
+        document.write("<big>" + (frase) + "</big>");
+        pulaLinha();
+    }
     var ano = 2022;
 
-    document.write("Jonatas tem " + (ano - 1996) + " anos");
-
-    pulaLinha();
-
-    document.write("Jonatas tem " + (ano - 1996) + " anos");
-
-    pulaLinha();
-
+    mostra("Jonatas tem " + (ano - 1996) + " anos");
+    mostra("Jonatas tem " + (ano - 1996) + " anos");
     ano = 2022
-    document.write("Lucas tem " + (ano - 2012) + " anos");
-
+    mostra("Lucas tem " + (ano - 2012) + " anos");
+    mostra("Palmeiras não tem mundial!!!");
 
 </script>
