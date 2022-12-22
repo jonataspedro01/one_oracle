@@ -1,4 +1,4 @@
-body
+.index
 {
     margin: 10px;
     background-color: rgb(179, 174, 174);
@@ -39,7 +39,7 @@ h1
   padding-left: 25px;
 }
 
-ul
+.ueli
 {
   display: inline-block;
   vertical-align: top;
@@ -47,13 +47,79 @@ ul
   height: 15%;
 }
 
-h2
-{
-  text-align: center;
-}
-
 .imagem
 {
   width: 35%;
   padding-left: 95px;
+}
+
+/* produtos.html */
+
+.pro
+{
+  background-color: #BBBBBB;
+  padding: 20px 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.lista1
+{
+  position: absolute;
+  top: 110px;
+  right: 0;
+  width: 37%;
+  height: 10%;
+  left: 608px;
+}
+
+
+.caixa
+{
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.dutos
+{
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.dutos li
+{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+}
+
+.dutos h2
+{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao
+{
+  font-size: 18px;
+}
+
+.produto-preco
+{
+  font-size: 22px;
+  font-weight: bold;
 }
