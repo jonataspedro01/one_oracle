@@ -1,17 +1,22 @@
+/* index.html  */
+
 .index
 {
-    margin: 10px;
-    background-color: rgb(179, 174, 174);
+  margin: 10px;
+  background-color: rgb(179, 174, 174);
 }
 
-h1
+.titulo
 {
   padding-left: 20px;
+  font-size: 40px;
+  padding: 10px;
 }
 
 .centralizar
 {
   text-align: center;
+  font-size: 23px;
 }
 
 #banner
@@ -23,34 +28,47 @@ h1
 .d1
 {
   background-color: #dee7de;
-  margin: 2px;
+  margin-top	: 10px;
+  padding: 20px;
+  font-size: 19px;
 }
 
 .d2
 {
   background-color: rgb(216, 203, 203);
   padding: 1px;
+  margin-top: 10px;
+}
+
+.bene
+{
+  font-style: italic;
+  font-size: 24px;
+  padding-left: 43px;
+  margin-top: 12px;
 }
 
 .beneficios
 {
   font-style: italic;
-  font-size: 20px;
-  padding-left: 25px;
+  font-size: 24px;
+  padding-left: 35px;
 }
 
 .ueli
 {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  height: 15%;
+  width: 29%;
+  height: 19%;
+  padding: 17px;
+  margin-top: 10px;
 }
 
 .imagem
 {
-  width: 35%;
-  padding-left: 95px;
+  width: 30%;
+  padding-left: 85px;
 }
 
 /* produtos.html */
@@ -74,6 +92,12 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover
+{
+  color: #C78C19;
+  text-decoration: underline;
+}
+
 .lista1
 {
   position: absolute;
@@ -83,7 +107,6 @@ nav a {
   height: 10%;
   left: 608px;
 }
-
 
 .caixa
 {
@@ -105,12 +128,32 @@ nav a {
   text-align: center;
   width: 30%;
   vertical-align: top;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+.dutos li:hover
+{
+  border-color: #C78C19;
+}
+
+.dutos li:active 
+{
+  border-color: #088C19;
 }
 
 .dutos h2
 {
   font-size: 30px;
   font-weight: bold;
+}
+
+.dutos li:hover h2 
+{
+  font-size: 34px;
 }
 
 .produto-descricao
@@ -122,4 +165,21 @@ nav a {
 {
   font-size: 22px;
   font-weight: bold;
+  margin-top: 10px;
+}
+
+ /* Rodapé   */
+
+footer
+{
+  text-align: center;
+  background: url("bg.jpg");
+  padding: 40px 0;
+}
+
+.copy
+{
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-top: 20px;
 }
