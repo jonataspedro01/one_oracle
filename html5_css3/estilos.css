@@ -24,7 +24,7 @@ transition: 1s;
   display: inline;
 }
 
-#banner
+.banner
 {
  /* height: 450px;  ajustar a altura do elemento */ 
   width: 100%;   /* ajustar a largura do elemento */ 
@@ -33,40 +33,44 @@ transition: 1s;
 .d2
 {
   background-color: rgb(216, 203, 203);
-  padding: 1px;
-  
+  padding: 4px; 
+  text-align: center;
+  margin: auto;
 }
 
 .bene
 {
-  font-style: italic;
-  font-size: 24px;
-  padding-left: 43px;
-  margin-top: 12px;
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
 }
 
-.beneficios
+.bene strong
 {
-  font-style: italic;
-  font-size: 24px;
-  padding-left: 35px;
+  font-weight: bold;
 }
 
-.ueli
+.bene em 
 {
-  display: inline-block;
-  vertical-align: top;
-  width: 29%;
-  height: 19%;
-  padding: 17px;
-  margin-top: 10px;
+  font-weight: bold;
+}
+
+.d2 p
+{
+  margin: 0 0 1em;
+}
+
+.utensilios
+{
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .imagem
 {
-  width: 25%;
-  padding-left: 85px;
-  margin-top: -25px;
+  width: 60%;
 }
 
 /* produtos.html */
