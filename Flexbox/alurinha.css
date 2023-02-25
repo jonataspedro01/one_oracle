@@ -1,0 +1,61 @@
+.cabecalhoPrincipal
+{
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: white;
+}
+
+.cabecalhoPrincipal .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cabecalhoPrincipal .cabecalhoPrincipal-titulo
+{
+    margin-bottom: 0px;
+    margin-left: -12px;
+}
+
+.cabecalhoPrincipal .cabecalhoPrincipal-nav-link 
+{
+    color:rgb(173, 158, 138);
+    border: 1px solid rgb(177, 136, 136);
+    border-radius: 5px;
+    margin: 0px;
+    padding: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cabecalhoPrincipal .cabecalhoPrincipal-nav-link:hover
+{
+    background-color: rgb(184, 203, 203);
+}
+
+.cabecalhoPrincipal-nav .cabecalhoPrincipal-nav-link
+{
+   padding-left: 13px;
+}
+
+main
+{
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: white;
+}
+
+main h1
+{
+    margin-bottom: 0px;
+    margin-left: -12px;
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+

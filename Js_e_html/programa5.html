@@ -1,0 +1,107 @@
+<canvas width="600" height="400"></canvas>
+
+<select id="escolher">
+    <option value="">--Selecione a Dificuldade--</option>
+    <option value="facil">Fácil</option>
+    <option value="medio">Médio</option>
+    <option value="dificil">Difícil</option>
+    <option value="god">GodClick</option>
+</select>
+
+<button id="selecionar">Selecionar</button>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var xRandomAlvo, yRandomAlvo; //posições aleatorias
+    var raio = 10;
+
+    var dificuldade = [1500, 1000, 800, 500]; //nivel de repetição do setInterval
+    var facil, medio, dificil, god; //utilizadas para cancelar o setInterval
+
+    //lista de escolha
+    var select = document.getElementById('escolher');
+    var button = document.getElementById('selecionar');
+
+    //Configs da tela de pintura
+    pincel.fillStyle = 'white';
+    pincel.fillRect(0, 0, 600, 400);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(0, 0, 600, 400);
+
+    //gerar o circulo
+    const desenhaCirculo = (x, y, raio, cor) => {
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+    //gerar posições aleatoriamente
+    const sorteiaPosicao = maximo => {
+        return Math.floor(Math.random() * maximo);
+    }
+
+    //utilizar circulo aleatoriamente
+    const alvo = (x, y) => {
+        desenhaCirculo(x, y, raio + 20, 'red'); // maior círculo
+        desenhaCirculo(x, y, raio + 10, 'white');
+        desenhaCirculo(x, y, raio, 'red'); // menor circulo
+    }
+
+    //limpar o alvo sempre que for atualizado, senão ficará vários alvos sobrescritos
+    const limpaTela = () => {
+        pincel.clearRect(0, 0, 600, 400);
+        pincel.fillStroke = 'black';
+        pincel.strokeRect(0, 0, 600, 400);
+    }
+
+    //utilizar a função alvo para atualizar sozinha automaticamente
+    const atualizaAlvo = () => {
+        limpaTela();
+        xRandomAlvo = sorteiaPosicao(600);
+        yRandomAlvo = sorteiaPosicao(400);
+        alvo(xRandomAlvo, yRandomAlvo);        
+    }
+
+    //resetar o setinterval, para evitar sobrescrita do alvo
+    const resetaDificuldade = (dif1, dif2, dif3) => {
+        clearInterval(dif1);
+        clearInterval(dif2);
+        clearInterval(dif3);
+    }
+
+    //evento para atribuir a dificuldade ao clicar no botão de selecionar
+    button.addEventListener('click', (evento) => {
+        switch (select.value) {
+            case 'facil':
+                resetaDificuldade(medio, dificil, god);
+                facil = setInterval(atualizaAlvo, dificuldade[0]);
+                break;
+            case 'medio':
+                resetaDificuldade(facil, dificil, god);
+                medio = setInterval(atualizaAlvo, dificuldade[1]);
+                break;
+            case 'dificil':
+                resetaDificuldade(facil, medio, god);
+                dificil = setInterval(atualizaAlvo, dificuldade[2]);
+                break;
+            case 'god':
+                resetaDificuldade(facil, medio, dificil);
+                god = setInterval(atualizaAlvo, dificuldade[3]);
+                break;
+            default:
+                break;
+        }
+    });
+
+    //clique do mouse no alvo
+    tela.onclick = (evento) => {
+        var x = evento.pageX - tela.offsetLeft;
+        var y = evento.pageY - tela.offsetTop;
+
+        if (x > xRandomAlvo - raio && x < xRandomAlvo + raio &&
+            y > yRandomAlvo - raio && y < yRandomAlvo + raio) {
+            alert(`Acertou!`);
+       }
+    }
+</script>

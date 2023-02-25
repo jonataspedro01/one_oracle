@@ -23,8 +23,29 @@ body
 background: rgb(243, 153, 42);
 transition: 1s;
 }
+.titulo:before{
+  content: "{ ";
+}
 
+.titulo:after{
+  content: " }";
+}
 
+.titulo::first-letter{
+  font-weight: bold;
+ 
+}
+.itens{
+  text-align: justify;
+}
+
+p::first-line{
+  font-style: italic;
+}
+
+.itens::before{
+  content: "★"
+}
 .titulo h3 , .titulo h1
 {
   display: inline;
@@ -35,7 +56,7 @@ transition: 1s;
  /* height: 450px;  ajustar a altura do elemento */ 
   width: 100%;   /* ajustar a largura do elemento */ 
 }
-
+/*
 .d2
 {
   background-color: rgb(216, 203, 203);
@@ -43,14 +64,28 @@ transition: 1s;
   text-align: center;
   margin: auto;
 }
+*/
 
 
 section p 
 {
   padding: 10px;
   text-align: center;
+ 
 }
 
+.two{
+  text-align: center;
+  background: #888888;
+  margin: auto 0;
+}
+
+.d2{
+  padding: 3em 0;
+  background: #FEFEFE;
+  text-align: center;
+  margin: auto;
+}
 
 
 .utensilios
@@ -67,12 +102,16 @@ section .utensilios
 }
 
 
-
-.mapa
-{
-  padding: 3em 0;
+.teste{
+  background: linear-gradient(#FEFEFE , #888888);
 }
-
+.mapa{
+ 
+  padding: 3em 0;
+  margin: 0 auto;
+  width: 940px;
+  
+}
 .mapa p 
 {
   margin: 0 0 2em;
@@ -99,6 +138,13 @@ display: inline;
 .imagem-beneficio
 {
   width: 30%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficio:hover {
+  opacity: 0.3;
 }
 
 .lista-beneficio
@@ -106,10 +152,9 @@ display: inline;
  vertical-align: top;
   width: 20%;
   display: inline-block;
-  margin-left: 280px;
+  
  line-height: 1.5;
 }
-
 
 
 .itens:first-child
