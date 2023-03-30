@@ -1,0 +1,10 @@
+Para rodar o projeto, precisa instalar o liver server 
+pelo terminal (o vs code tem uma extesão, essa é só mais uma opção.)
+
+Instalação (dentro da pasta desejada): 
+
+npm install -g live-server
+
+Para iniciar o servidor (dentro da pasta com o arquivo raíz): 
+
+live-server
