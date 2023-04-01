@@ -1,5 +1,5 @@
 Para rodar o projeto, precisa instalar o liver server 
-pelo terminal (o vs code tem uma extesão, essa é só mais uma opção.)
+pelo terminal (o vs code tem uma extensão, essa é só mais uma opção.)
 
 Instalação (dentro da pasta desejada): 
 
