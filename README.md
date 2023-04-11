@@ -6,19 +6,23 @@ Site Oficial: https://www.oracle.com/br/education/oracle-next-education/
 
 Trilhas de conteúdo do ONE:
 
-Lógica de programação
+Lógica de programação:
+
 É o primeiro passo para aprender a programar. 
 Esta trilha vai abrir sua cabeça para a lógica e o mercado de desenvolvimento de software.
 
-Front-end
+Front-end:
+
 Você vai aprender a construir experiências fantásticas na web, 
 se aprofundando nas linguagens HTML, CSS e JavaScript.
 
-Back-end
+Back-end: 
+
 Usado para criar aplicativos para computadores, smartphones, 
 tablets e até videogames, o Java é uma das principais linguagens de programação do mundo.
 
-Empreendedorismo
+Empreendedorismo:
+
 Você vai aprender os fundamentos básicos do mundo dos negócios para transformar seus conhecimentos e aprender habilidades essenciais para uma carreira de sucesso.
 
 Cada turma cumpre uma jornada de 6 meses, divididos em 4 trilhas disponibilizadas na plataforma – ao todo são mais de 560 horas de conteúdo.
@@ -29,4 +33,4 @@ Parceiro educacional: Alura.
 
 Participei da turma 4, com foco no front-end e da turma 5, com foco no back-end.
 
-Neste repositório agrupei todo conteúdo estudado, bem como os desafios realizados.
+Neste repositório, agrupei todo conteúdo estudado, bem como os desafios realizados.
