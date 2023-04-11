@@ -1,0 +1,5 @@
+Para ver o projeto rodando:
+
+Abre o terminal e digita o comando:
+
+Browser-sync start -s -f . --directory 
