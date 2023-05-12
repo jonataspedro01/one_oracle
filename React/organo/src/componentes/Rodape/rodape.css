@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(228, 223, 216);
+    height: 25vh;
+    color: rgb(45, 42, 42);
+    text-align: center;
+}
+  
+.footer-link {
+    margin-top: 15px;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(52, 49, 49);
+}
+
+.footer-link:hover {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.dev {
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: 18px;
+}
+  
+p {
+   margin-bottom: 15px;
+}
